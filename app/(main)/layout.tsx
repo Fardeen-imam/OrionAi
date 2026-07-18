@@ -1,0 +1,12 @@
+import { Chilanka } from "next/font/google";
+import React, { Children } from "react";
+
+const layout = ({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) => {
+  return <div className="mt-16">{children}</div>;
+};
+
+export default layout;
